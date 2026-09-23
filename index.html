@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>husain_nike — Link Hub</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+
+    color: #29251f;
+
+    background:
+        radial-gradient(
+            circle at 50% -10%,
+            #fffdf4 0%,
+            #fff4d6 25%,
+            #f4dfb0 50%,
+            #ead09b 72%,
+            #ddbd79 100%
+        );
+
+    display: flex;
+    justify-content: center;
+
+    padding: 45px 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 560px;
+    text-align: center;
+}
+
+
+/* =========================
+   PROFILE
+========================= */
+
+.profile {
+    margin-bottom: 35px;
+}
+
+.profile-icon {
+    width: 105px;
+    height: 105px;
+
+    margin: 0 auto 20px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background:
+        radial-gradient(
+            circle,
+            #fffef8 0%,
+            #fff1c7 45%,
+            #e4c47b 100%
+        );
+
+    border: 1px solid #b99242;
+
+    color: #8b6827;
+
+    font-family: Georgia, serif;
+    font-size: 38px;
+
+    box-shadow:
+        0 0 35px rgba(196, 148, 54, 0.38),
+        0 5px 25px rgba(90, 67, 30, 0.12),
+        inset 0 0 25px rgba(255, 255, 255, 0.8);
+}
+
+.profile h1 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 34px;
+    font-weight: 400;
+
+    letter-spacing: 9px;
+
+    margin-left: 9px;
+
+    color: #29251f;
+
+    text-shadow:
+        0 1px 1px rgba(255, 255, 255, 0.6);
+}
+
+.username {
+    margin-top: 10px;
+
+    color: #5f5649;
+
+    font-size: 14px;
+}
+
+.description {
+    max-width: 470px;
+
+    margin: 18px auto 0;
+
+    color: #4d463b;
+
+    line-height: 1.7;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   LINKS
+========================= */
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.link {
+    position: relative;
+
+    width: 100%;
+
+    padding: 17px 22px;
+
+    border-radius: 12px;
+
+    background:
+        rgba(255, 250, 235, 0.88);
+
+    border: 1px solid rgba(155, 119, 52, 0.45);
+
+    color: #302b24;
+
+    text-decoration: none;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    box-shadow:
+        0 5px 18px rgba(87, 63, 25, 0.10);
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.link:hover {
+    transform: translateY(-3px);
+
+    background:
+        rgba(255, 253, 244, 0.98);
+
+    border-color: #b99242;
+
+    box-shadow:
+        0 9px 28px rgba(78, 56, 20, 0.14),
+        0 0 20px rgba(201, 158, 66, 0.20);
+}
+
+.link span {
+    margin-right: 8px;
+
+    color: #9b742c;
+
+    font-size: 16px;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about {
+    margin-top: 35px;
+
+    padding: 25px;
+
+    border-radius: 14px;
+
+    background:
+        rgba(255, 249, 231, 0.90);
+
+    border: 1px solid rgba(155, 119, 52, 0.42);
+
+    text-align: left;
+
+    box-shadow:
+        0 7px 25px rgba(83, 60, 25, 0.10);
+}
+
+.about h2 {
+    color: #936c24;
+
+    font-family: Georgia, serif;
+
+    font-size: 18px;
+
+    font-weight: 500;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 15px;
+}
+
+.about p {
+    color: #39342c;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+.about .quote {
+    display: block;
+
+    color: #785a22;
+
+    font-family: Georgia, serif;
+
+    line-height: 1.7;
+}
+
+.about .praise {
+    display: block;
+
+    color: #684e1d;
+
+    font-family: Georgia, serif;
+
+    line-height: 1.7;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    margin-top: 35px;
+
+    color: #73571f;
+
+    font-family: Georgia, serif;
+
+    font-size: 12px;
+
+    letter-spacing: 3px;
+
+    text-shadow:
+        0 1px 1px rgba(255, 255, 255, 0.45);
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 500px) {
+
+    body {
+        padding: 35px 15px;
+    }
+
+    .profile h1 {
+        font-size: 27px;
+        letter-spacing: 7px;
+    }
+
+    .profile-icon {
+        width: 90px;
+        height: 90px;
+        font-size: 32px;
+    }
+
+    .about {
+        padding: 22px;
+    }
+}
+</style>
+</head>
+
+
+<body>
+
+<div class="container">
+
+    <!-- PROFILE -->
+
+    <section class="profile">
+
+        <div class="profile-icon">
+            ✦ 🪽 ✦
+        </div>
+
+        <h1>حُسَيْن</h1>
+
+        <div class="username">
+            @Husain_nike
+        </div>
+
+        <p class="description">
+            Great weather yeah...?
+        </p>
+
+    </section>
+
+
+    <!-- LINKS -->
+
+    <section class="links">
+
+        <a
+            class="link"
+            href="https://www.youtube.com/channel/UC0z7D2u461gbb3I-jntmNTg"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            <span>✦</span> YouTube
+        </a>
+
+        <a
+            class="link"
+            href="https://discord.gg/RTK2zz7uMT"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            <span>✧</span> Discord
+        </a>
+
+        <a
+            class="link"
+            href="https://www.roblox.com/users/9451168236/profile"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            <span>◇</span> Roblox
+        </a>
+
+        <a
+            class="link"
+            href="https://x.com/husain_nike"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            <span>𝕏</span> X
+        </a>
+
+        <a
+            class="link"
+            href="https://t.me/Avernic"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            <span>✈</span> Telegram
+        </a>
+
+    </section>
+
+
+    <!-- ABOUT -->
+
+    <section class="about">
+
+        <h2>✦ ABOUT ME ✦</h2>
+
+        <p>
+            Hey, I’m Husain.
+
+            <br><br>
+
+            I’m just a curious guy who likes learning random stuff and going way too deep into things that probably didn’t need that much thought.
+
+            <br><br>
+
+            I’m into religion, philosophy, history, science, mysteries, psychology, technology, and pretty much anything that makes me stop and think. I ask a lot of questions, sometimes way too many.
+
+            <br><br>
+
+            I also mess around with Roblox, YouTube, Discord, design, and whatever random project I get obsessed with that week.
+
+            <br><br>
+
+            I don’t really like pretending I know everything. If I’m wrong, I’d rather find out and change my mind.
+
+            <br><br>
+
+            <span class="quote">
+                “To live the life fully, first connect yourself with your soul and Lord.”
+            </span>
+
+            <br>
+
+            Still learning, still questioning, still figuring things out.
+
+            <br><br>
+
+            <span class="praise">
+                ✦ “All praises and thanks to the Lord of all creation.” ✦
+            </span>
+        </p>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+        ✧ ༺⟐✧ ﴿كُلُّ نَفْسٍ ذَائِقَةُ الْمَوْتِ﴾✧⟐༻ ✧
+    </footer>
+
+</div>
+
+</body>
+</html>
+```
